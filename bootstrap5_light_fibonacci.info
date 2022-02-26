@@ -5,3 +5,4 @@ base theme = bootstrap5_lite
 
 stylesheets[all][] = dist/main.css
 scripts[] = dist/main.js
+scripts[] = search.js

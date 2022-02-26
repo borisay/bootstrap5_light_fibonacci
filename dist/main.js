@@ -1,4 +1,5 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./js/index.js":
@@ -7,45 +8,9 @@
   \*********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ "./sass/style.scss");
-/* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search */ "./js/search.js");
-/* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_search__WEBPACK_IMPORTED_MODULE_1__);
-console.log("index.js"); // import "../styles/style.css";
 
-
-
-
-/***/ }),
-
-/***/ "./js/search.js":
-/*!**********************!*\
-  !*** ./js/search.js ***!
-  \**********************/
-/***/ (function() {
-
-console.log("search.js");
-window.addEventListener('load', function (event) {
-  var navbar = document.querySelector(".navbar-collapse");
-  console.log(document.querySelector(".navbar-collapse ul"));
-  var menu = document.querySelector(".navbar-collapse ul").classList.add("menu-dropdown");
-  var search = document.querySelector(".search-block-form").classList;
-  document.querySelector(".search-block-form > div").classList.add("row", "justify-content-md-center");
-  document.querySelector(".search-block-form div.form-item").classList.add("col-md-6", "col-9");
-  document.querySelector(".search-block-form div.form-actions").classList.add("col-md-1", "col-3");
-  var opensearchPhone = document.querySelector("#phone.open-search span");
-  var opensearchDesktop = document.querySelector("#desktop.open-search span");
-  opensearchPhone.addEventListener('click', function (e) {
-    e.preventDefault();
-    console.log("search");
-    search.toggle("show");
-  });
-  opensearchDesktop.addEventListener('click', function (e) {
-    e.preventDefault();
-    search.toggle("show");
-  });
-});
 
 /***/ }),
 
@@ -55,7 +20,6 @@ window.addEventListener('load', function (event) {
   \*************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -123,30 +87,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
 /******/ 		};
 /******/ 	}();
 /******/ 	
