@@ -1,0 +1,50 @@
+{
+    "name": "bootstrap5_light_fibonacci",
+    "description": "A theme based on bootstrap5.",
+    "private": true,
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/borisay/bootstrap5_light_fibonacci.git"
+    },
+    "scripts": {
+        "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --mode production",
+        "dev": "cross-env NODE_ENV=development webpack --config webpack.config.js --mode development",
+        "watch": "cross-env NODE_ENV=development webpack --config webpack.config.js --mode development --watch",
+        "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js --mode development"
+    },
+    "browserslist": ">0.25%, not dead",
+    "keywords": [
+        "bootstrap",
+        "backdrop",
+        "webpack"
+    ],
+    "author": "Boris Ayupov <boris.ayupov@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/borisay/bootstrap5_light_fibonacci/issues"
+    },
+    "homepage": "https://github.com/borisay/bootstrap5_light_fibonacci#readme",
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "babel-loader": "^8.2.3",
+        "clean-webpack-plugin": "^4.0.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.4.0",
+        "css-minimizer-webpack-plugin": "^3.1.1",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.4.0",
+        "mini-css-extract-plugin": "^2.4.2",
+        "node-sass": "^6.0.1",
+        "sass-loader": "^12.2.0",
+        "style-loader": "^3.3.0",
+        "terser-webpack-plugin": "^5.2.4",
+        "webpack": "^5.59.0",
+        "webpack-cli": "^4.9.1"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1",
+        "bootstrap": "^5.1.3"
+    }
+}

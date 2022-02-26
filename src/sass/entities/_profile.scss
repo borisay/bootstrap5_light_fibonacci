@@ -1,0 +1,91 @@
+// Staff listing.
+#block-views-cmqcc-staff-block-staff-listing {
+  .views-row {
+    @include clearfix;
+    margin-bottom: 1em;
+  }
+
+  .group-left {
+    width: 35%;
+    float: left;
+    padding-right: 1em;
+  }
+
+  .group-right {
+    width: 65%;
+    float: left;
+  }
+
+  .views-field-field-committee {
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+// Profile page.
+.profile2-cmqcc-profile {
+  .field-name-field-profile-photo {
+    float: left;
+    margin: 0 2em 2em 0;
+    width: 90px;
+  }
+
+  h2.profile-name {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .field-name-field-degrees {
+    font-size: 18px;
+  }
+
+  .field-name-field-primary-title {
+    margin: 1em 0 0 0;
+  }
+
+  .field-name-field-profile {
+    margin-bottom: 2.5em;
+  }
+
+  .field-name-field-quotation {
+    font-size: 18px;
+    margin-bottom: 2.5em;
+    font-weight: 300;
+
+    p {
+      display: inline;
+    }
+
+    .field-item {
+      &:before {
+        content: '“';
+        display: inline;
+      }
+
+      &:after {
+        content: '”';
+        display: inline;
+      }
+    }
+  }
+
+  .field-name-field-committee {
+    margin-bottom: 2.5em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .field-name-field-improvement-story {
+    .field-label {
+      margin-bottom: 0.5em;
+    }
+  }
+}

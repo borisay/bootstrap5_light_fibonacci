@@ -1,0 +1,50 @@
+$main-content-second-sidebar-gutter-width: 1.666666667%;
+$sidebar-first-width: 21.666666667%;
+$sidebar-second-width: 23.333333333%;
+$content-width: (100% - $sidebar-first-width - $sidebar-second-width - $main-content-second-sidebar-gutter-width);
+@media (min-width: $screen-md-min) {
+    main.col-xs-12 {
+        width: $content-width !important;
+        left: $sidebar-first-width;
+        padding: 0 20px 0 25px;
+        .front & {
+            width: 100% !important;
+            left: 0;
+            padding: 0;
+        }
+    }
+    aside.sidebar-first {
+        width: $sidebar-first-width;
+        right: $content-width;
+        padding: 0;
+    }
+    aside.sidebar-second {
+        width: $sidebar-second-width;
+        padding: 0;
+        left: $main-content-second-sidebar-gutter-width;
+        body.one-sidebar & {
+            left: ($sidebar-first-width + $main-content-second-sidebar-gutter-width);
+        }
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: $screen-sm-max) {
+    aside.sidebar-first {
+        display: none;
+    }
+    main.col-xs-12 {
+        left: 0;
+        width: 100% !important;
+        .front & {
+            padding: 0;
+        }
+    }
+    aside.sidebar-second {
+        width: 100%;
+        left: 0;
+    }
+}

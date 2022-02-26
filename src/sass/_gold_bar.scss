@@ -1,0 +1,66 @@
+.gold-container {
+  background-color: $brand-primary;
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 20px;
+  }
+
+  .cmdc-homepage {
+    position: relative;
+    padding: 45px 0;
+    display: table;
+    table-layout: fixed;
+    @media (max-width: $screen-sm-max) {
+      padding: 20px 0;
+    }
+
+    .large-text {
+      @media (max-width: $screen-md-max) {
+        font-size: 14px;
+      }
+    }
+    
+    > div {
+      padding: 0;
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &.left {
+        padding-left: 15px;
+        width: 15%;
+
+        @media (max-width: $screen-xs-max) {
+          padding-left: 10px;
+          padding-bottom: 10px;
+        }
+      }
+
+      &.center {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+          padding-right: 40px;
+        }
+      }
+
+      &.right {
+        @media (max-width: $screen-md-max) {
+          img {
+            width: 100px !important;
+            height: auto !important;
+          }
+        }
+        @media (max-width: $screen-sm-max) {
+          img {
+            width: 63px !important;
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+}

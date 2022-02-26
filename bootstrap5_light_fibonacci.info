@@ -1,0 +1,8 @@
+name = Bootstrap5 Light Fibonacci
+description = This is a sub-theme of theme bootstrap5_lite.
+backdrop = 1.x
+base theme = bootstrap5_lite
+
+stylesheets[all][] = dist/main.css
+scripts[] = dist/main.js
+scripts[] = cmqcc.js

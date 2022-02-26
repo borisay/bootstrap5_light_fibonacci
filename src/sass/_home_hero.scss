@@ -1,0 +1,104 @@
+.hero-container {
+  background-color: $gray-light;
+
+  .home-hero {
+    .views-field-field-home-hero-image {
+      img {
+        // @include img-responsive;
+        width: 100%;
+      }
+    }
+
+    .right-side {
+      display: table;
+      height: 300px;
+      padding-left: 4%;
+
+      @media (max-width: $screen-md-max) {
+        height: 242px;
+      }
+      @media (max-width: $screen-sm-max) {
+        height: 221px;
+      }
+      @media (max-width: $screen-xs-max) {
+        height: auto;
+        margin: 20px 0 15px;
+        padding: 0 10px;
+      }
+
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+
+        h3,
+        h3 > a {
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $gray;
+          margin: 0;
+        }
+
+        h2,
+        h2 > a {
+          font-weight: 300;
+          font-size: 30px;
+          color: $gray-darker;
+
+          @media (max-width: $screen-md-max) {
+            font-size: 26px;
+          }
+          @media (max-width: $screen-sm-max) {
+            font-size: 20px;
+          }
+        }
+
+        h2 {
+          margin: 5px 0 0;
+          line-height: 1.2em;
+        }
+
+        .caret-right {
+          display: block;
+          margin-top: 0.5em;
+        }
+      }
+    }
+
+    .owl-controls {
+      position: absolute;
+      bottom: 38px;
+      right: 20px;
+      margin: 0;
+      @media (max-width: $screen-sm-max) {
+        bottom: 14px;
+        right: 18px;
+      }
+      @media (max-width: $screen-xs-max) {
+        position: static;
+        margin-bottom: 5px;
+      }
+
+      .owl-pagination {
+        .owl-page {
+          span {
+            margin: 0;
+            margin-left: 8px;
+            background-color: #fff;
+            // @include square(14px);
+
+            @media (max-width: $screen-xs-max) {
+              // @include square(11px);
+            }
+          }
+
+          &.active {
+            span {
+              background-color: #bababa;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.msie.ie8 {
+  #page-header {
+    nav.p6-main-menu {
+      & > ul {
+        & > li {
+          ul {
+            position: absolute;
+            left: -50%;
+          }
+        }
+      }
+    }
+  }
+}

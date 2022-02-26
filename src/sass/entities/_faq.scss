@@ -1,0 +1,24 @@
+.view-faq {
+  .slide-down-trigger {
+    &:after {
+      content: "";
+      margin-left: 0;
+    }
+
+    &.expanded:after {
+      content: "";
+    }
+
+    &:before {
+      // @include cmqcc-icons;
+      content: "o";
+      margin-right: 3px;
+      font-size: 14px;
+      color: $blue;
+    }
+
+    &.expanded:before {
+      content: "p";
+    }
+  }
+}
