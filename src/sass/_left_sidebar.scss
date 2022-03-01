@@ -11,6 +11,9 @@ $hover-active-links-color: #f2f2f2;
 
     > li {
       min-height: 50px;
+      list-style: none;
+      list-style-image: none;
+      padding: 0;
       > a {
         height: 50px;
         width: 100%;
@@ -20,6 +23,7 @@ $hover-active-links-color: #f2f2f2;
         padding: 0 15px;
         text-transform: uppercase;
         border-top: 1px solid $gray-light;
+        text-decoration: none;
       }
 
       &.expanded {
@@ -48,7 +52,6 @@ $hover-active-links-color: #f2f2f2;
               background-color: #d8d8d8;
             }
           }
-
 
           > ul {
             > li {
@@ -84,9 +87,26 @@ $hover-active-links-color: #f2f2f2;
   }
 }
 
-.region-sidebar-first {
-  .block-menu-block {
-    > .menu-block-wrapper {
+// .region-sidebar-first {
+//   .block-menu-block {
+//     > .menu-block-wrapper {
+//       @include internal-menu;
+
+//       > ul {
+//         > li {
+//           > a {
+//             &:hover {
+//               background-color: $hover-active-links-color;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+.l-sidebar-first {
+  .block-menu-menu-research-and-toolkits-menu {
+    .block-content {
       @include internal-menu;
 
       > ul {

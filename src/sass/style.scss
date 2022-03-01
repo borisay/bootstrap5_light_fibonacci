@@ -1,28 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
-// ===========
-// Bootstrap variables and library.
 @import "bootstrap_variables";
-// // Theme specific.
-// @import "left_sidebar";
-@import "left_sidebar_copy";
+@import "left_sidebar";
 @import "header";
-@import "content";
-@import "footer";
-// Custom code goes below this line.
-@import "structure";
-@import "right_sidebar";
-@import "gold_bar";
-@import "home_hero";
-@import "secondary_pages_images";
-@import "home_blocks";
-// @import "form";
-@import "entities/news";
-@import "entities/events";
-@import "entities/committee";
-@import "entities/profile";
-@import "entities/resource";
-@import "entities/faq";
-// @import "ie";
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
